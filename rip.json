@@ -3,9 +3,5 @@
   "version": "0.0.1",
   "description": "example description.",
   "entry": "src/init.lua",
-  "dependencies": [],
-  "files": [
-    "src/init.lua",
-    "src/utils.lua"
-  ]
+  "dependencies": []
 }
