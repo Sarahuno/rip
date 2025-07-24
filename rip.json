@@ -1,0 +1,10 @@
+{
+  "name": "rizzpack",
+  "version": "0.1.0",
+  "description": "A simple test package with files inside /src.",
+  "entry": "src/init.lua",
+  "files": [
+    "src/init.lua",
+    "src/utils.lua"
+  ]
+}
