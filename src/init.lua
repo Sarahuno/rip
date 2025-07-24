@@ -9,7 +9,6 @@ end
 function meow.printtest(stringss)
     print(stringss)
     warn(stringss)
-    error(stringss)
 end
 
 function meow.mathtest(int1,int2)
