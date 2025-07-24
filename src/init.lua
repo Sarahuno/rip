@@ -1,18 +1,46 @@
 local utils = loadstring("utils.lua")()
 
-local meow = {}
+local rip = {}
 
-function meow.mangnitudetest(vectorone, vectortwo)
-    return utils.mangnitude(vectorone,vectortwo)
+function rip.magnitudeTest(vec1, vec2)
+    return utils.magnitude(vec1, vec2)
 end
 
-function meow.printtest(stringss)
-    print(stringss)
-    warn(stringss)
+function rip.factorialTest(n)
+    return utils.factorial(n)
 end
 
-function meow.mathtest(int1,int2)
-    return (int1 + int2)
+function rip.capitalizeTest(str)
+    return utils.capitalize(str)
 end
 
-return meow
+function rip.isPrimeTest(n)
+    return utils.is_prime(n)
+end
+
+function rip.deepSumTest(tbl)
+    return utils.deep_sum(tbl)
+end
+
+function rip.closureMaker(base)
+    return function(x)
+        return base + x
+    end
+end
+
+function rip.fibonacci(n)
+    if n <= 1 then return n end
+    return rip.fibonacci(n-1) + rip.fibonacci(n-2)
+end
+
+function rip.filterPrimes(tbl)
+    local primes = {}
+    for _, v in ipairs(tbl) do
+        if type(v) == "number" and utils.is_prime(v) then
+            table.insert(primes, v)
+        end
+    end
+    return primes
+end
+
+return rip
