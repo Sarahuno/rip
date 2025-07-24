@@ -1,10 +1,19 @@
-local utils = require("utils.lua")
+local utils = loadstring("utils.lua")()
 
-local ESPModule = {}
+local meow = {}
 
-function ESPModule.Highlight(player)
-    local color = utils.GetRandomColor()
-    print("Highlighting player:", player.Name, "with color:", color)
+function meow.mangnitudetest(vectorone, vectortwo)
+    return utils.mangnitude(vectorone,vectortwo)
 end
 
-return ESPModule
+function meow.printtest(stringss)
+    print(stringss)
+    warn(stringss)
+    error(stringss)
+end
+
+function meow.mathtest(int1,int2)
+    return (int1 + int2)
+end
+
+return meow
