@@ -1,7 +1,7 @@
 {
-  "name": "rizzpack",
+  "name": "testripmodule",
   "version": "0.1.0",
-  "description": "A simple test package with files inside /src.",
+  "description": "testing it.",
   "entry": "src/init.lua",
   "files": [
     "src/init.lua",
