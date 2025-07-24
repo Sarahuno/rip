@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "testing it.",
   "entry": "src/init.lua",
+  "dependencies": [],
   "files": [
     "src/init.lua",
     "src/utils.lua"
