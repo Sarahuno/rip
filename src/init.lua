@@ -1,4 +1,4 @@
-local modules = imp("*")
+local modules = loadstring("*")()
 
 local rip = {}
 
