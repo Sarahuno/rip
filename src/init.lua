@@ -1,25 +1,25 @@
-local utils = loadstring("utils.lua")()
+local modules = imp("*")
 
 local rip = {}
 
 function rip.magnitudeTest(vec1, vec2)
-    return utils.magnitude(vec1, vec2)
+    return modules.utils.magnitude(vec1, vec2)
 end
 
 function rip.factorialTest(n)
-    return utils.factorial(n)
+    return modules.utils.factorial(n)
 end
 
 function rip.capitalizeTest(str)
-    return utils.capitalize(str)
+    return modules.utils.capitalize(str)
 end
 
 function rip.isPrimeTest(n)
-    return utils.is_prime(n)
+    return modules.utils.is_prime(n)
 end
 
 function rip.deepSumTest(tbl)
-    return utils.deep_sum(tbl)
+    return modules.utils.deep_sum(tbl)
 end
 
 function rip.closureMaker(base)
